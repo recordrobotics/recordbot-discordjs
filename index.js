@@ -3,7 +3,7 @@ const { Client, Collection, Intents } = require('discord.js');
 const { token } = require('./config.json');
 
 // Create client instance
-const bot = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const bot = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS] });
 bot.once('ready', () => console.log("Record Bot is up!"));
 bot.login(token);
 
