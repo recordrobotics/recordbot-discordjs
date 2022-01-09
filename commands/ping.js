@@ -2,8 +2,7 @@ const { SlashCommandBuilder } = require("@discordjs/builders");
 
 module.exports.data = new SlashCommandBuilder()
     .setName("ping")
-    .setDescription("Pings the bot")
-    .setDefaultPermission(true);
+    .setDescription("Returns the latency of the bot.");
 
 module.exports.run = async (event) => {
     let latency = Date.now() - event.createdTimestamp;

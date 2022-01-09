@@ -1,10 +1,11 @@
 {
   "name": "recordbot",
   "version": "1.0.0",
-  "description": "Rewrite for the discord bot for discord.js",
+  "description": "discord.js implementation for the RR discord bot",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "deploy": "node deploy-commands"
   },
   "author": "",
   "license": "ISC",
